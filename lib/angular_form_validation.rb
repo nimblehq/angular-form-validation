@@ -1,11 +1,9 @@
 require "angular_form_validation/version"
+require "angular_form_validation/form/builder"
+require "angular_form_validation/helpers/form_tag"
+require "angular_form_validation/helpers"
+require "angular_form_validation/railtie"
 
 module AngularFormValidation
 
-end
-
-%w(form helpers).each do |lib|
-  Dir.glob("#{File.dirname(__FILE__)}/form_angular/#{lib}/*").each { |file|
-    require file
-  }
 end
