@@ -7,7 +7,7 @@ module AngularFormValidation
       # Add form name attribute (id is added by default)
       def form_tag(url_for_options = {}, options = {}, &block)
         options.merge!({"name" => "#{controller.action_name}#{controller_name.classify}"})
-        super(url_for_options = {}, options, &block)
+        super(url_for_options, options, &block)
       end
 
       def ng_model_opts(object, attribute)
