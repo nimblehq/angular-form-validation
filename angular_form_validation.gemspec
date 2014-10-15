@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["olivier@nimbl3.com"]
   spec.summary       = "Implement easily angular validation via form_form and form_tag helpers"
   spec.description   = ""
-  spec.homepage      = "http://nimbl3.com"
+  spec.homepage      = "https://github.com/nimbl3/angular-form-validation"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
