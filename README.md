@@ -1,6 +1,6 @@
-# AngularFormValidation
+# Angular Form Validation Gem
 
-Implement easily angular validation via form_form and form_tag helpers
+Ruby gem to easily implement angular validation via form_form and form_tag helpers
 
 ## Installation
 
