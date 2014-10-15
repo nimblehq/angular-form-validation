@@ -15,7 +15,7 @@ module AngularFormValidation
     end
 
     def submit(value=nil, options={})
-      options.merge!({"ng-disabled" =>"#{@template.action_name}#{@template.controller_name.classify}.$invalid"})
+      options.merge!({"ng-disabled" =>"#{@options[:html][:method].to_s}#{@template.controller_name.classify}.$invalid"})
       super(value, options)
     end
 
