@@ -46,7 +46,7 @@ This helper can be used on form inputs to add the ng-model and ng-init attribute
 
 Example: 
 
-    <%= text_field_tag :name, params[:name], { required: true }.merge(ng_model_opts(@user, :name)
+    <%= text_field_tag :name, params[:name], ng_model_opts(@user, :name, required: true) %>
     
 ### ng_submit_opts(object)
 
@@ -54,7 +54,7 @@ This helper can be used on form buttons to add the ng-disabled attribute:
 
 Example: 
 
-    <%= button_tag t("common.form.actions.save_btn"), ng_submit_opts(@product_config) %
+    <%= button_tag t("common.form.actions.save_btn"), ng_submit_opts(@product_config) %>
     
 ### Example
 
@@ -65,3 +65,5 @@ Example:
         text_field_tag :name, params[:name], { required: true }.merge(ng_model_opts(@product_category, :name)
         button_tag "Create", ng_submit_opts(@product_category)
     end
+
+Developed by [Nimbl3](www.nimbl3.com)
