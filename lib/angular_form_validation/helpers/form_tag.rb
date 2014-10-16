@@ -10,12 +10,13 @@ module AngularFormValidation
         super(url_for_options, options, &block)
       end
 
-      def ng_model_opts(object, attribute)
+      def ng_model_opts(object, attribute, options = {})
         object_name = object.class.model_name.singular
         init_value = params[object_name.to_sym][attribute.to_s] if params[object_name.to_sym].present?
         opts  = {}
         opts["ng-model"] = "#{object_name}.#{attribute.to_s}"
         opts["ng-init"] = "#{object_name}.#{attribute.to_s}='#{init_value}'"
+        opts.merge!(options)
         opts
       end
 
