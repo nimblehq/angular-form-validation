@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = AngularFormValidation::VERSION
   spec.authors       = ["Olivier Robert", "Nimbl3"]
   spec.email         = ["olivier@nimbl3.com"]
-  spec.summary       = "Implement easily angular validation via form_form and form_tag helpers"
+  spec.summary       = "Implement easily angular validation via form_for and form_tag helpers"
   spec.description   = ""
   spec.homepage      = "https://github.com/nimbl3/angular-form-validation"
   spec.license       = "MIT"
