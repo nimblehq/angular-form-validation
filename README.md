@@ -1,6 +1,9 @@
-# Angular Form Validation Gem
 
-Ruby gem to easily implement angular validation via Rails form helpers form_for and form_tag 
+# Angular Form Validation Gem 
+
+Ruby gem to easily implement angular validation via Rails form helpers form_for and form_tag
+ 
+[![Gem Version](https://badge.fury.io/rb/angular_form_validation.png)](http://badge.fury.io/rb/angular_form_validation)
 
 ## Installation
 
@@ -65,5 +68,7 @@ Example:
         text_field_tag :name, params[:name], { required: true }.merge(ng_model_opts(@product_category, :name)
         button_tag "Create", ng_submit_opts(@product_category)
     end
+    
+## Goodies
 
 Developed by [Nimbl3](www.nimbl3.com)
