@@ -69,6 +69,39 @@ Example:
         button_tag "Create", ng_submit_opts(@product_category)
     end
     
-## Goodies
+## SASS styling
+
+This gem does not include css styles for Angular built-in form classes. 
+
+Feel free to implement your own but you can use the styles below as a starting point when using some popular css frameworks.
+
+### Bourbon.io
+
+    $form-ng-invalid-color: darken($error-color, 10);
+    $form-ng-valid-color: darken($success-color, 30);
+    
+    .ng-invalid.ng-dirty {
+      border-color: $form-ng-invalid-color;
+      &:hover {
+        border-color: $form-ng-invalid-color;
+      }
+      &:focus {
+        border-color: $form-ng-invalid-color;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.06), 0 0 5px rgba(darken($form-ng-invalid-color, 5), 0.7);
+        outline: none;
+      }
+    }
+    
+    .ng-valid.ng-dirty {
+      border-color: $form-ng-valid-color;
+      &:hover {
+        border-color: $form-ng-valid-color;
+      }
+      &:focus {
+        border-color: $form-ng-valid-color;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.06), 0 0 5px rgba(darken($form-ng-valid-color, 5), 0.7);
+        outline: none;
+      }
+    }
 
 Developed by [Nimbl3](www.nimbl3.com)
