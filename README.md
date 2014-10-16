@@ -63,9 +63,9 @@ Example:
 
     form_tag product_category_path do |f|
         label_tag :ref_code
-        text_field_tag :ref_code, params[:ref_code], { required: true }.merge(ng_model_opts(@product_category, :ref_code)
+        text_field_tag :ref_code, params[:ref_code], ng_model_opts(@product_category, :ref_code, required: true)
         label_tag :name
-        text_field_tag :name, params[:name], { required: true }.merge(ng_model_opts(@product_category, :name)
+        text_field_tag :name, params[:name], ng_model_opts(@product_category, :name, required: true)
         button_tag "Create", ng_submit_opts(@product_category)
     end
     
@@ -74,6 +74,32 @@ Example:
 This gem does not include css styles for Angular built-in form classes. 
 
 Feel free to implement your own but you can use the styles below as a starting point when using some popular css frameworks.
+
+### Bootstrap
+
+    .ng-invalid.ng-dirty {
+      border-color: $state-danger-border;
+      &:hover {
+        border-color: $state-danger-border;
+      }
+      &:focus {
+        border-color: $state-danger-border;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.06), 0 0 5px rgba(darken($state-danger-border, 5), 0.7);
+        outline: none;
+      }
+    }
+    
+    .ng-valid.ng-dirty {
+      border-color: $state-success-border;
+      &:hover {
+        border-color: $state-success-border;
+      }
+      &:focus {
+        border-color: $state-success-border;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,0.06), 0 0 5px rgba(darken($state-success-border, 5), 0.7);
+        outline: none;
+      }
+    }
 
 ### Bourbon.io
 
@@ -104,4 +130,4 @@ Feel free to implement your own but you can use the styles below as a starting p
       }
     }
 
-Developed by [Nimbl3](www.nimbl3.com)
+Developed by [Nimbl3](http://www.nimbl3.com)
