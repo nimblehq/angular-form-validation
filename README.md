@@ -18,9 +18,9 @@ As a result, you can easily have JavaScript validation on all forms with a minim
 
 ![Gem Demo](http://d1iix9iwi7lpon.cloudfront.net/images/gif/angular-form-gem-demo.gif)
 
-## Usage for form_tag
+## Usage for form_form helper
 
-Write the standard form_for  and specify which input is required for validation purposes:
+Write the standard form_for and specify which input is required for validation purposes:
 
     form_for @product_category do |f|
         label_tag :ref_code
@@ -39,7 +39,7 @@ This will generate the following form:
         <input name="commit" ng-disabled="postProductCategory.$invalid" type="submit" value="Create" disabled="disabled">
     </form>
 
-## Usage for form_tag
+## Usage for form_tag helper
 
 When using the helper form_tag, it is required to use the following helpers:
 
