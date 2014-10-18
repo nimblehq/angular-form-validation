@@ -18,7 +18,7 @@ As a result, you can easily have JavaScript validation on all forms with a minim
 
 ![Gem Demo](http://d1iix9iwi7lpon.cloudfront.net/images/gif/angular-form-gem-demo.gif)
 
-## Usage for form_form helper
+## Usage for form_for helper
 
 Write the standard form_for and specify which input is required for validation purposes:
 
